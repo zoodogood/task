@@ -21,3 +21,17 @@ No any reminders from this tool. Only the person is free to choose when to start
 - `task workspace` — alias for «task help workspace»
 - `task workspace.commands` — alias for «task file», or «task help workspace», if any command no created
 - `task workspace.commands add {source}` — adds a command that will be invoked along with the task (by design, such commands should open up your work time and remove distractions)
+
+
+### Installation preview (not affect now)
+With Rust
+```
+cargo install --git https://github.com/zoodogood/task
+```
+
+Or download bin file [from here](#) and move him to binaries folder of your OS (in other words: Add to PATH)
+#### Run
+```
+task help
+```
+, — to view current version if all ok. Another [Go to installation issues on github](https://github.com/zoodogood/task/discussions/1)
