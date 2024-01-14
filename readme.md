@@ -12,14 +12,12 @@ No any reminders from this tool. Only the person is free to choose when to start
 ### Commands
 - `task` — shows the title of the current task and attached todo, if any. Invokes workspace commands in turn (see `task help workspace.command`)  
 - `task help <command>` — provide general information
-- `task todo` — allias for task help todo
+- `task todo` — alias for «task help todo»
 - `task todo add {label}` — adds subtask
 - `task todo list` — display subtasks
-- `task todo done {displayed id}` — mark subtask as done (Try use `fzf task todo list | task todo done`, if fzf installed)
+- `task todo done {displayed id}` — mark subtask as done (Try use `fzf task todo list | task todo done --`, if fzf installed)
 - `task ididit` — congratulations. Completely erases the completed. task and all related data, and starts all over again.
 - `task file` — returns the path to task config file
-- `task workspace` — allias for task help workspace
-- `task workspace.commands` — allias for task file, or task help workspace, if any command no created
+- `task workspace` — alias for «task help workspace»
+- `task workspace.commands` — alias for «task file», or «task help workspace», if any command no created
 - `task workspace.commands add {source}` — adds a command that will be invoked along with the task (by design, such commands should open up your work time and remove distractions)
-- `task workspace.links` — display links or call help subcommand
-- `task workspace.links add {link}` — adds a link thats will be displayed with the task
