@@ -7,7 +7,7 @@ It started when I added task.sh to my PATH environment. All this script did was 
 The program does not allow you to create more than one task at a time. You must honestly mark a task as completed before creating a new one
 
 - **Return responsibly:**
-No any reminders from this tool. Only the person is free to choose when to start a task. You can set the alarm clock in another application if you need to.
+No any reminders from this tool. Only the person is free to choose when to working on a task. You can set the alarm clock in another application if you need to.
 
 ### Commands
 - `task` — shows the title of the current task and attached todo, if any. Invokes workspace commands in turn (see `task help workspace.command`)  
