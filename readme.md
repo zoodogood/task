@@ -11,7 +11,7 @@ No any reminders from this tool. Only the person is free to choose when to start
 
 ### Commands
 - `task` — shows the title of the current task and attached todo, if any. Invokes workspace commands in turn (see `task help workspace.command`)  
-- `task help <command>` — provide general information
+- `task help {command}` — provide general information
 - `task todo` — alias for «task help todo»
 - `task todo add {label}` — adds subtask
 - `task todo list` — display subtasks
@@ -21,6 +21,7 @@ No any reminders from this tool. Only the person is free to choose when to start
 - `task workspace` — alias for «task help workspace»
 - `task workspace.commands` — alias for «task file», or «task help workspace», if any command no created
 - `task workspace.commands add {source}` — adds a command that will be invoked along with the task (by design, such commands should open up your work time and remove distractions)
+- `task alias` — provide namespace for some script
 
 
 ### Installation preview (not affect now)
