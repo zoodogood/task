@@ -6,3 +6,19 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+current_platform = "0.2.0"
+dirs = "5.0.1"
+serde = { version = "1.0.195", features = ["derive"] }
+
+[profile.release]
+panic = "abort"
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+
+[package.metadata.scripts]
+build = "cross build"
+hello = "echo hello"
+run_hello = "cargo run-script hello"
+pwd = "echo $PWD"
