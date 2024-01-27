@@ -12,6 +12,7 @@ No any reminders from this tool. Only the person is free to choose when to worki
 ### Commands
 - `task` — shows the title of the current task and attached todo, if any. Invokes workspace commands in turn (see `task help workspace.command`)  
 - `task help {command}` — provide general information
+- `task version` — provide version and source information
 - `task todo` — alias for «task help todo»
 - `task todo add {label}` — adds subtask
 - `task todo list` — display subtasks
@@ -33,6 +34,6 @@ cargo install --git https://github.com/zoodogood/task
 Or download bin file [from here](#) and move him to binaries folder of your OS (in other words: Add to PATH)
 #### Run
 ```
-task help
+task version
 ```
 , — to view current version if all ok. Another [Go to installation issues on github](https://github.com/zoodogood/task/discussions/1)
