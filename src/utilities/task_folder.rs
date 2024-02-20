@@ -27,7 +27,7 @@ impl Config {
         match fs::read(PathBuf::from(format!("{directory}/{CONFIG_FILE}"))) {
 				Ok(value) => Ok(Some(value)),
 				Err(error) => match error {
-					 
+					 _ => panic!("123")
 				}
 		  } 
     }

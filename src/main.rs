@@ -1,6 +1,5 @@
 mod commands;
-mod hep;
-use commands::help::execute;
+use commands::{help, version};
 use std::env::args;
 
 use current_platform::{COMPILED_ON, CURRENT_PLATFORM};
@@ -23,9 +22,18 @@ fn main() {
         "Hello, world from {}! I was compiled on {}.",
         CURRENT_PLATFORM, COMPILED_ON
     );
-    execute();
     task_folder::create_folder().unwrap();
 
-    let args = parse(&mut args());
+    let arg2s = parse(&mut args());
+    let command: &str = args()
+    	.nth(0).or(Some("NULL".into()))
+    	.unwrap()
+    	.into();
+    	
+    match command {
+    	"version" => version::execute(),
+  		"help" => help::execute(),
+  		"NULL" => println!("NUll")
+    }
     
 }
